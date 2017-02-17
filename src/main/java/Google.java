@@ -14,8 +14,6 @@ public class Google {
     public static class LocalChannelHandler extends ChannelInboundHandlerAdapter {
         @Override
         public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
-            // DefaultHttpResponse httpResponse = (DefaultHttpResponse) msg;
-            // System.out.println (httpResponse.toString());
             ByteBuf byteBuf = (ByteBuf) msg;
             byte[] buffer = new byte[byteBuf.readableBytes()];
             byteBuf.getBytes(0, buffer);
