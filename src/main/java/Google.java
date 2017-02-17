@@ -18,7 +18,6 @@ public class Google {
             byte[] buffer = new byte[byteBuf.readableBytes()];
             byteBuf.getBytes(0, buffer);
             String s = new String(buffer);
-            System.out.println("Got " + s);
         }
 
         @Override
